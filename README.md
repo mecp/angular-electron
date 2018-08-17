@@ -78,6 +78,22 @@ You can desactivate "Developer Tools" by commenting `win.webContents.openDevTool
 Maybe you want to execute the application in the browser with hot reload ? You can do it with `npm run ng:serve:web`.  
 Note that you can't use Electron or NodeJS native libraries in this case. Please check `providers/electron.service.ts` to watch how conditional import of electron/Native libraries is done.
 
+## References in order of relevance
+
+  - https://github.com/CubikNeRubik/angular-electron-typeorm-starter
+  - https://github.com/maximegris/angular-electron
+  - https://github.com/typeorm/typeorm/issues/1327
+  - https://github.com/typeorm/typeorm/issues/900
+  - https://github.com/typeorm/electron-typescript-example
+  - https://github.com/electron/electron-quick-start-typescript
+  - https://alligator.io/angular/electron/
+  - https://7d3.ru/wiki/897
+
+# If sqlite3 not found error is encountered
+  ```sh
+    $ ./node_modules/.bin/electron-rebuild -f -w sqlite3
+  ```
+
 ## Branch & Packages version
 
 - Angular 4 & Electron 1 : Branch [angular4](https://github.com/maximegris/angular-electron/tree/angular4)
